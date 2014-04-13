@@ -1,7 +1,13 @@
-language: elixir
-script: "mix test"
+language: erlang
 notifications:
   recipients:
     - brett.kochendorfer@gmail.com
 otp_release:
   - 17.0
+otp_release:
+  - R16B
+before_install:
+  - git clone https://github.com/elixir-lang/elixir
+  - cd elixir && make && cd ..
+before_script: "export PATH=`pwd`/elixir/bin:$PATH"
+script: "MIX_ENV=test mix do deps.get, test"  
