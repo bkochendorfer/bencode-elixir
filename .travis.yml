@@ -3,7 +3,7 @@ notifications:
   recipients:
     - brett.kochendorfer@gmail.com
 otp_release:
-  - 17.0
+  - 17.0-rc1
 before_install:
   - git clone https://github.com/elixir-lang/elixir
   - cd elixir && make compile
