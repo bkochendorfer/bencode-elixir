@@ -1,0 +1,7 @@
+language: erlang
+script: "mix test"
+notifications:
+  recipients:
+    - brett.kochendorfer@gmail.com
+otp_release:
+  - 17.0
