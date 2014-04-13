@@ -1,4 +1,4 @@
-language: erlang
+language: elixir
 script: "mix test"
 notifications:
   recipients:
